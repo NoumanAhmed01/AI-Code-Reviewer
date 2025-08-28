@@ -27,9 +27,6 @@ ai-code-reviewer/
 │ │ ├── App.css
 │ ├── package.json
 
-yaml
-Copy code
-
 ---
 
 ## 🚀 Getting Started
@@ -40,26 +37,20 @@ Copy code
 git clone https://github.com/NoumanAhmed01/AI-Code-Reviewer.git
 cd ai-code-reviewer
 2️⃣ Backend Setup
-bash
-Copy code
+
 cd backend
 npm install
 npm start
 The backend will run on:
 
-arduino
-Copy code
 http://localhost:3000
 3️⃣ Frontend Setup
-bash
-Copy code
+
 cd frontend
 npm install
 npm run dev
 The frontend will run on:
 
-arduino
-Copy code
 http://localhost:5173
 🌍 Deployment
 Frontend → Deploy to Vercel or Netlify
