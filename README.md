@@ -1,93 +1,85 @@
-🧑‍💻 AI Code Reviewer
+# 🤖 AI Code Reviewer
 
-An AI-powered tool that reviews your code and gives suggestions for improvements, best practices, and bug detection.
-Built with MERN stack + Gemini API, this project helps developers get instant feedback on their code.
+An **AI-powered Code Reviewer** built with **React + Node.js**.  
+It allows you to paste or write your code, click **Review**, and instantly get feedback from AI with highlighted suggestions.
 
-🚀 Features
+---
 
-✨ Live code editor with syntax highlighting (using PrismJS)
+## ✨ Features
 
-🤖 AI-powered code review (via Gemini/OpenAI API)
+- 🔍 Real-time code editing with syntax highlighting
+- 🤖 AI-powered review for your code
+- 🎨 Clean and responsive UI
+- ⚡ Beginner-friendly setup
+- 📦 Backend with Express.js and AI API integration
 
-📜 Markdown formatted review output with syntax highlighting
+---
 
-🎨 Clean & modern UI with loader for better UX
+## 📂 Project Structure
 
-🌍 Deployable for free (Frontend → Vercel / Backend → Render or Railway)
-
-🛠️ Tech Stack
-
-Frontend: React, Tailwind CSS, PrismJS, React Simple Code Editor, React Markdown
-Backend: Node.js, Express.js
-AI Service: Google Gemini / OpenAI API
-Deployment: Vercel (frontend), Render/Railway (backend)
-
-📂 Project Structure
-AI-Code-Reviewer/
-│
-├── backend/
-│ ├── server.js # Entry point
-│ ├── app.js # Middleware & routes setup
-│ ├── routes/ # API endpoints
-│ ├── controllers/ # Request handling
-│ └── services/ # AI integration logic
-│
-├── frontend/
+ai-code-reviewer/
+├── backend/ # Express.js API
+│ ├── index.js
+│ ├── package.json
+├── frontend/ # React App
 │ ├── src/
-│ │ ├── App.jsx # Main React app
-│ │ ├── App.css # Styles
-│ │ └── components/ # (optional) reusable UI parts
-│ └── package.json
-│
-└── README.md
+│ │ ├── App.jsx
+│ │ ├── App.css
+│ ├── package.json
 
-⚡ Getting Started
-1️⃣ Clone the repo
+yaml
+Copy code
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repo
+
+```bash
 git clone https://github.com/NoumanAhmed01/AI-Code-Reviewer.git
 cd ai-code-reviewer
-
-2️⃣ Setup Backend
+2️⃣ Backend Setup
+bash
+Copy code
 cd backend
 npm install
-
-Create a .env file in /backend with:
-
-PORT=3000
-GEMINI_API_KEY=your_api_key_here
-
-Start the backend:
-
 npm start
+The backend will run on:
 
-3️⃣ Setup Frontend
-cd ../frontend
+arduino
+Copy code
+http://localhost:3000
+3️⃣ Frontend Setup
+bash
+Copy code
+cd frontend
 npm install
 npm run dev
+The frontend will run on:
 
-By default it runs at: http://localhost:5173
-
-Make sure backend is running at http://localhost:3000
-.
-
+arduino
+Copy code
+http://localhost:5173
 🌍 Deployment
+Frontend → Deploy to Vercel or Netlify
 
-Frontend: Deploy /frontend folder on Vercel
-or Netlify
-.
+Backend → Deploy to Render or Railway
 
-Backend: Deploy /backend folder on Render
-or Railway
-.
+👉 After deployment, update the backend URL inside frontend/App.jsx where axios.post is used.
 
-⚠️ Don’t forget to update your frontend axios.post URL to the deployed backend endpoint.
+📸 Screenshots (Optional)
+Add screenshots or demo GIFs here
+
+🛠️ Tech Stack
+Frontend: React, TailwindCSS, PrismJS, React Markdown
+
+Backend: Node.js, Express.js, AI API (OpenAI or similar)
 
 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-Feel free to fork the repo and submit a PR.
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
 📜 License
-
-This project is open source under the MIT License.
-
+This project is licensed under the MIT License.
 ✨ Built with ❤️ by Nouman Ahmed
+```
